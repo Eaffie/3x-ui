@@ -19,19 +19,21 @@ require (
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/shirou/gopsutil/v4 v4.26.4
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
-	github.com/valyala/fasthttp v1.71.0
+	github.com/valyala/fasthttp v1.79.0
 	github.com/xlzd/gotp v0.1.0
 	github.com/xtls/xray-core v1.260327.0
 	go.uber.org/atomic v1.11.0
-	golang.org/x/crypto v0.52.0
-	golang.org/x/sys v0.45.0
-	golang.org/x/text v0.37.0
+	golang.org/x/crypto v0.58.0
+	golang.org/x/sys v0.50.0
+	golang.org/x/text v0.43.0
 	google.golang.org/grpc v1.81.1
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 	gorm.io/driver/postgres v1.6.0
 	gorm.io/driver/sqlite v1.6.0
 	gorm.io/gorm v1.31.1
 )
+
+require github.com/molecule-man/go-brrr v1.3.1 // indirect
 
 require (
 	github.com/Azure/go-ntlmssp v0.1.1 // indirect
@@ -62,7 +64,7 @@ require (
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/juju/ratelimit v1.0.2 // indirect
-	github.com/klauspost/compress v1.18.6 // indirect
+	github.com/klauspost/compress v1.20.4 // indirect
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/lufia/plan9stats v0.0.0-20260330125221-c963978e514e // indirect
@@ -94,11 +96,11 @@ require (
 	go4.org/netipx v0.0.0-20231129151722-fdeea329fbba // indirect
 	golang.org/x/arch v0.27.0 // indirect
 	golang.org/x/exp v0.0.0-20260508232706-74f9aab9d74a // indirect
-	golang.org/x/mod v0.36.0 // indirect
-	golang.org/x/net v0.55.0
-	golang.org/x/sync v0.20.0 // indirect
+	golang.org/x/mod v0.41.0 // indirect
+	golang.org/x/net v0.62.0
+	golang.org/x/sync v0.24.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
-	golang.org/x/tools v0.45.0 // indirect
+	golang.org/x/tools v0.51.0 // indirect
 	golang.zx2c4.com/wintun v0.0.0-20230126152724-0fa3db229ce2 // indirect
 	golang.zx2c4.com/wireguard v0.0.0-20260522210424-ecfc5a8d5446 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260523011958-0a33c5d7ca68 // indirect
