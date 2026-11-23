@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Teminuosi/3x-ui/releases"><img alt="Release" src="https://img.shields.io/github/v/release/Teminuosi/3x-ui.svg"></a>
-  <a href="https://github.com/Teminuosi/3x-ui/actions"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Teminuosi/3x-ui/release.yml.svg"></a>
+  <a href="https://github.com/Eaffie/3x-ui/releases"><img alt="Release" src="https://img.shields.io/github/v/release/Eaffie/3x-ui.svg"></a>
+  <a href="https://github.com/Eaffie/3x-ui/actions"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/Eaffie/3x-ui/release.yml.svg"></a>
   <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img alt="License" src="https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true"></a>
 </p>
 
@@ -51,10 +51,10 @@
 
 ```bash
 # 方式一：带域名 —— 自动申请 SSL 证书并把证书配到面板，其余全部用默认值
-XUI_DOMAIN=panel.example.com bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/3x-ui/main/install.sh)
+XUI_DOMAIN=panel.example.com bash <(curl -Ls https://raw.githubusercontent.com/Eaffie/3x-ui/main/install.sh)
 
 # 方式二：不带域名 —— 全部用默认值、随机端口，不申请证书
-XUI_AUTO=1 bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/3x-ui/main/install.sh)
+XUI_AUTO=1 bash <(curl -Ls https://raw.githubusercontent.com/Eaffie/3x-ui/main/install.sh)
 ```
 
 装完后，在服务器上输入 `x-ui` 即可打开管理菜单（重启面板、查看账号、改端口、更新/卸载等）。
@@ -62,7 +62,7 @@ XUI_AUTO=1 bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/3x-ui/mai
 > - **域名要写在 `XUI_DOMAIN`，不是 `XUI_AUTO`。** 写反了脚本会当成没开自动模式、退回交互式（现在会自动纠正并提示，但别指望它）。
 > - 设了 `XUI_DOMAIN` 会自动开启全自动模式。若你的 shell 下行内变量没生效，可以先下载再执行：
 >   ```bash
->   curl -Ls https://raw.githubusercontent.com/Teminuosi/3x-ui/main/install.sh -o /tmp/i.sh
+>   curl -Ls https://raw.githubusercontent.com/Eaffie/3x-ui/main/install.sh -o /tmp/i.sh
 >   XUI_DOMAIN=panel.example.com bash /tmp/i.sh
 >   ```
 > - 想自己一步步选（端口、SSL 方式等），去掉环境变量直接运行同一条命令即可进入交互式安装。
@@ -80,7 +80,7 @@ x-ui            # 打开管理菜单，菜单里有"更新""卸载"等选项
 这种情况直接用下面这条**彻底清除**命令，它不依赖任何已安装的文件：
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Teminuosi/3x-ui/main/install.sh) purge
+bash <(curl -Ls https://raw.githubusercontent.com/Eaffie/3x-ui/main/install.sh) purge
 ```
 
 它会清掉：systemd 服务、`/etc/x-ui/`（含数据库）、`/usr/local/x-ui/`、
